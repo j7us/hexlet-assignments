@@ -13,7 +13,7 @@ public class Application {
 
         for (Method m : methods) {
             if (m.getAnnotation(Inspect.class) != null) {
-                System.out.println("Method " + m.getName() +" returns a value of type " + m.getReturnType().getName());
+                System.out.println("Method " + m.getName() +" returns a value of type " + m.getReturnType().getSimpleName());
             }
         }
         // END
